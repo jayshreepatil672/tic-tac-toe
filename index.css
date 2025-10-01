@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: lightcyan;
+    text-align: center;
+    /* opacity: 0.2; */
+}
+h1{
+    margin: 10px;
+    padding: 10px;
+}
+.massage{
+    margin: 10px;
+    padding: 10px;
+    font-size: 50px;
+    color: red;
+}
+
+#container{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+#game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5vmin;
+    justify-content: center;
+}
+.box{
+    font-size: 50px;
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+    border-radius: 20px;
+box-shadow: 0 0 1rem rgba(0, 0,0, 0.3);
+}
+.box:hover{
+font-size: 50px;
+border: 2px solid rgb(34, 207, 15);
+height: 100px;
+width: 100px;
+border-radius: 20px;
+box-shadow: 0 0 1rem rgba(0, 0,0, 0.3);
+}
+#btn{
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 1rem black;
+    width: 330px;
+    height: 50px;
+    font-size: 30px;
+    background-color: rgb(15, 140, 140);
+    color: white;
+}
+#btn:hover{
+    box-shadow: 0 0 1rem palevioletred;
+    background-color: rgb(15, 213, 213);
+}
+@media screen and  (max-width : 526px ){
+    #container{
+        height: 60vh;
+        /* width: 50vh; */
+        /* border: 2px solid black; */
+    }
+    #game{
+        height: 80vmin;
+        width: 80vmin;
+        position:fixed;
+        /* border: 2px solid black; */
+        }
+    .box{
+        font-size: 50px;
+        border: 2px solid black;
+        /* position: absolute; */
+        position: relative;
+        height: 100px;
+        width: 100px;
+        border-radius: 20px;
+    box-shadow: 0 0 1rem rgba(0, 0,0, 0.3);
+    }
+}
+@media screen and  (max-width : 389px ){
+    #container{
+        height: 50vh;
+        /* width: 50vh; */
+        /* border: 2px solid black; */
+    }
+    #game{
+        height: 70vmin;
+        width: 65vmin;
+        position:fixed;
+        /* border: 2px solid black; */
+        }
+    .box{
+        font-size: 35px;
+        border: 2px solid black;
+        /* position: absolute; */
+        position: relative;
+        height: 60px;
+        width: 60px;
+        border-radius: 10px;
+    box-shadow: 0 0 1rem rgba(0, 0,0, 0.3);
+    }
+    .box:hover{
+        border: 1px solid rgb(34, 207, 15);
+        border-radius: 10px;
+        height: 60px;
+        width: 60px;
+        box-shadow: 0 0 1rem rgba(0, 0,0, 0.3);
+        }
+        #btn{
+            border: none;
+            border-radius: 20px;
+            box-shadow: 0 0 1rem black;
+            width: 210px;
+            height: 50px;
+            font-size: 25px;
+        }
+}
